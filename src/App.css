@@ -34,5 +34,5 @@ a{
   text-align: center;
   transition: all 0.2s;
   margin: 0 auto;
-  width: 300px;
+  width: "100%";
 }
