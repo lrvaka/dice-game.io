@@ -1,46 +1,50 @@
 import React, { useState } from 'react';import "./App.css";
 import Final1v1 from "./components/OneVersus"
 import { red, blue, green } from "@material-ui/core/colors";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import FinalTop2 from "./components/Top2"
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
 import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
 import DnDFinal from "./components/DnD"
-import Divider from "@material-ui/core/Divider";
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import './App.css';
 
 function App() {
+
   const images = [
     {
       url:
-        "./components/die/icons/VsIcon.png",
+        "https://i.ibb.co/9ykBN7Y/Asset-3.png",
       title: "1v1",
       width: "30%",
       onClick: function onClick(){
           setWelcomeCard(false)
+          setShowNavBar(true)
           setShowVersus(true)
         }
     },
     {
       url:
-        "./components/die/icons/dnd.jpeg",
+        "https://i.ibb.co/sPY0WWM/image-asset.jpg",
       title: "DnD Dice",
       width: "30%",
       onClick: function onClick1(){
           setWelcomeCard(false)
+          setShowNavBar(true)
           setShowDnD(true)
         }
     },
     {
-      url: "/static/images/grid-list/camera.jpg",
-      title: "Camera",
+      url: "https://i.ibb.co/8zJ6c3P/Two-Dice-58bddad45f9b58af5c4aa0d4.jpg",
+      title: "Best Pair",
       width: "30%",
       onClick: function onClick2(){
           setWelcomeCard(false)
+          setShowNavBar(true)
           setShowTop2(true)
         }
     }
@@ -54,6 +58,12 @@ function App() {
       width: "100%",
       justifyContent: "center",
       alignItems: "center"
+    },
+    navbar: {
+      flexGrow: 1,
+    },
+    menuButton: {
+      marginRight: theme.spacing(2),
     },
     image: {
       position: "relative",
@@ -155,7 +165,8 @@ function App() {
       width: "10ch"
     }
   });
-  
+
+  const classes = useStyles();
 
   const FinalTopTwo = (<FinalTop2/>)
   const FinalDnD = (<DnDFinal/>)
@@ -165,34 +176,19 @@ function App() {
   const [ShowVersus, setShowVersus] = useState(false)
   const [ShowDnD, setShowDnD] = useState(false)
   const [ShowTop2, setShowTop2] = useState(false)
-
-  function onClick(){
-    setWelcomeCard(false)
-    setShowVersus(true)
-  }
-
-  function onClick1(){
-    setWelcomeCard(false)
-    setShowDnD(true)
-  }
-
-  function onClick2(){
-    setWelcomeCard(false)
-    setShowTop2(true)
-  }
+  const [ShowNavBar, setShowNavBar] = useState(false)
 
   function closeitup(){
     setOpen420(false)
   }
   
-  const classes = useStyles();
-
   const finalCard = (<div className={classes.root}>
     {images.map(image => (
       <ButtonBase
         focusRipple
         type={"button"}
-        onClick={image.onClick}
+        onClick={() => {image.onClick(); setShowNavBar(true);
+        }}
         key={image.title}
         className={classes.image}
         focusVisibleClassName={classes.focusVisible}
@@ -222,6 +218,21 @@ function App() {
     ))}
   </div>
 )
+
+const FinalNavBar = (<div className={classes.AppBar}>
+  <AppBar position="static" color="#CE412A">
+    <Toolbar variant="dense">
+      <IconButton onClick={() => {setWelcomeCard(true); setShowVersus(false); setShowDnD(false); setShowTop2(false); setShowNavBar(false); 
+        }} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+        <ArrowBackIcon/>
+      </IconButton>
+      <Typography variant="h6" color="inherit">
+       Game selection screen
+      </Typography>
+    </Toolbar>
+  </AppBar>
+</div>)
+
 
   return (
     <div className="App">
@@ -262,6 +273,7 @@ function App() {
       subtitle='Luke Vakasisikakala & Caroline Mastel'
     />
       </AutoRotatingCarousel>
+      {ShowNavBar ? FinalNavBar : null}
       <header className="App-header">
       {WelcomeCard ? finalCard : null }
       {ShowVersus ? FinalOne : null }
