@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dice-game.io/static/css/main.12862d52.chunk.css",
-    "main.js": "/dice-game.io/static/js/main.5654a936.chunk.js",
-    "main.js.map": "/dice-game.io/static/js/main.5654a936.chunk.js.map",
+    "main.js": "/dice-game.io/static/js/main.bde94093.chunk.js",
+    "main.js.map": "/dice-game.io/static/js/main.bde94093.chunk.js.map",
     "runtime-main.js": "/dice-game.io/static/js/runtime-main.a103798f.js",
     "runtime-main.js.map": "/dice-game.io/static/js/runtime-main.a103798f.js.map",
     "static/js/2.14999199.chunk.js": "/dice-game.io/static/js/2.14999199.chunk.js",
     "static/js/2.14999199.chunk.js.map": "/dice-game.io/static/js/2.14999199.chunk.js.map",
     "index.html": "/dice-game.io/index.html",
-    "precache-manifest.60d95ed4ef364c05a656ec322cffef27.js": "/dice-game.io/precache-manifest.60d95ed4ef364c05a656ec322cffef27.js",
+    "precache-manifest.156e7a2ae766a14e92abcbeb2a0ec3d9.js": "/dice-game.io/precache-manifest.156e7a2ae766a14e92abcbeb2a0ec3d9.js",
     "service-worker.js": "/dice-game.io/service-worker.js",
     "static/css/main.12862d52.chunk.css.map": "/dice-game.io/static/css/main.12862d52.chunk.css.map",
     "static/js/2.14999199.chunk.js.LICENSE.txt": "/dice-game.io/static/js/2.14999199.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.a103798f.js",
     "static/js/2.14999199.chunk.js",
     "static/css/main.12862d52.chunk.css",
-    "static/js/main.5654a936.chunk.js"
+    "static/js/main.bde94093.chunk.js"
   ]
 }
