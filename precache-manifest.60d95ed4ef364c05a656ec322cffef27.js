@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ccc66c06a03ae6f202a7bf89ad00c7c1",
+    "revision": "16bad8f3a6d26ebe4859633748711bd4",
     "url": "/dice-game.io/index.html"
   },
   {
-    "revision": "87732b68d9be15bb8fc8",
-    "url": "/dice-game.io/static/css/main.76b47370.chunk.css"
+    "revision": "bd8cf9a8011430c739bc",
+    "url": "/dice-game.io/static/css/main.12862d52.chunk.css"
   },
   {
     "revision": "e706f451d45b4d924453",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dice-game.io/static/js/2.14999199.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "87732b68d9be15bb8fc8",
+    "revision": "bd8cf9a8011430c739bc",
     "url": "/dice-game.io/static/js/main.5654a936.chunk.js"
   },
   {
