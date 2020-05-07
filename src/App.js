@@ -232,7 +232,7 @@ function App() {
         onStart={closeitup}
         autoplay={false}
         mobile={true}
-        style={{ position: "absolute" }}
+        style={{ position: "absolute", width: "100%", height: "100%" }}
       >
         <Slide
           media={
