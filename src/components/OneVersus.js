@@ -16,7 +16,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import React, { useState } from 'react';
 
-
 const styles = muiBaseTheme => ({
   card: {
     maxWidth: 300,
@@ -65,7 +64,7 @@ const useStyles = makeStyles({
     width: "8ch"
   },
   textField9: {
-    width: "10ch"
+    width: "5ch"
   },
   menu: {
     width: "15ch"

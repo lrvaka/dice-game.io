@@ -64,7 +64,7 @@ const useStyles = makeStyles({
     width: "8ch"
   },
   textField9: {
-    width: "10ch"
+    width: "9ch"
   },
   menu: {
     width: "15ch"
