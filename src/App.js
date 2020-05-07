@@ -125,9 +125,18 @@ function App() {
           }
           mediaBackgroundStyle={{ backgroundColor: red[400] }}
           style={{ backgroundColor: red[600] }}
-          title="Welcome "
-          subtitle="This is a die object display application created using React!"
+          title="dice-game.io "
+          subtitle="This is an application for displaying uses of a die object using React Javascript!"
         />
+         <Slide
+      media={
+        <img src={ require('./components/die/icons/ThreeGames.png')} width="256" height="256" />
+      }
+      mediaBackgroundStyle={{ backgroundColor: blue[400] }}
+      style={{ backgroundColor: blue[600] }}
+      title='3 Different Ways'
+      subtitle='This project shows three ways in which a die object can be used, a game where the person with highest score wins, a dungeons and dragons die simulator, and a game of pairs, where the person with the highest set of pairs wins!'
+    />
       </AutoRotatingCarousel>
       {WelcomeCard ? finalCard : null }
       {ShowVersus ? FinalOne : null }
