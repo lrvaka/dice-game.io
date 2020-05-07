@@ -251,7 +251,7 @@ const FinalNavBar = (<div className={classes.AppBar}>
           }
           mediaBackgroundStyle={{ backgroundColor: red[400] }}
           style={{ backgroundColor: red[600] }}
-          title="dice-game.io "
+          title="dice-game"
           subtitle="This is an application for displaying uses of a die object using React Javascript!"
         />
          <Slide
